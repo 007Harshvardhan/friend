@@ -15,12 +15,12 @@ h1 {
 }
 
 .animated-name {
-  animation: bounce 2s infinite;
+  animation: colorChange 0.1s infinite alternate;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+@keyframes colorChange {
+  0% { color: #ff6f61; }
+  100% { color: #ff4833; }
 }
 
 .buttons {
@@ -78,4 +78,15 @@ button:hover {
   100% {
     transform: translateY(0) rotate(0deg);
   }
+}
+
+.crush-photo {
+  display: none; /* Initially hidden */
+  margin-top: 20px;
+}
+
+.crush-photo img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
 }
